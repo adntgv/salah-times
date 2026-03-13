@@ -1,16 +1,40 @@
-# salah_times
+# Salah Times
 
-A new Flutter project.
+Prayer times app for Astana, Kazakhstan.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- 5 daily prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha)
+- Live clock with seconds
+- Next prayer countdown
+- Beautiful Material 3 design with gradient UI
+- Dark mode support
+- Responsive design for all screen sizes
 
-A few resources to get you started if this is your first Flutter project:
+## Development
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Built with Flutter 3.35.7
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Getting Started
+
+```bash
+flutter pub get
+flutter run
+```
+
+### Build for iOS
+
+```bash
+flutter build ipa --release
+```
+
+## CI/CD
+
+This project uses **Xcode Cloud** for automated iOS builds:
+- Builds automatically on push to `main` branch
+- Uploads to TestFlight after successful build
+- 25 compute hours/month free tier
+
+## License
+
+MIT
